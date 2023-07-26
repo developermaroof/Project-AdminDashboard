@@ -4,7 +4,7 @@ import "./App.css";
 import Home from "./pages/home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserList from "./pages/userList/UserList";
-// import User from "./pages/user/User";
+import User from "./pages/user/User";
 // import NewUser from "./pages/newUser/NewUser";
 // import ProductList from "./pages/productList/ProductList";
 // import Product from "./pages/product/Product";
@@ -22,19 +22,19 @@ function App() {
         <Routes>
           <Route path="/users" element={<UserList />} />
         </Routes>
+        <Routes>
+          <Route path="/user/:userId" element={<User />} />
+        </Routes>
         {/* <Routes>
-          <Route path="/user/:userId"  element={<User />} />
-        </Routes>
-        <Routes>
           <Route path="/newUser"  element={<NewUser />} />
-        </Routes>
-        <Routes>
+        </Routes> */}
+        {/* <Routes>
           <Route path="/products"  element={<ProductList />} />
-        </Routes>
-        <Routes>
+        </Routes> */}
+        {/* <Routes>
           <Route path="/product/:productId"  element={<Product />} />
-        </Routes>
-        <Routes>
+        </Routes> */}
+        {/* <Routes>
           <Route path="/newproduct"  element={<NewProduct />} />
         </Routes> */}
       </div>
